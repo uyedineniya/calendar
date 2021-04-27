@@ -1,8 +1,8 @@
-package com.glitchedwise.model.forms;
+package com.rootticc.model.forms;
 
 import java.sql.Date;
 
-import com.glitchedwise.model.entities.User;
+import com.rootticc.model.entities.User;
 
 public class UserForm {
 

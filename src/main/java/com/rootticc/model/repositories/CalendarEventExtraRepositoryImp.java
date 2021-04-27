@@ -1,4 +1,4 @@
-package com.glitchedwise.model.repositories;
+package com.rootticc.model.repositories;
 
 import java.util.Date;
 import java.util.List;
@@ -11,7 +11,7 @@ import org.hibernate.Session;
 import org.hibernate.query.Query;
 import org.springframework.stereotype.Repository;
 
-import com.glitchedwise.model.entities.Event;
+import com.rootticc.model.entities.Event;
 
 import lombok.AllArgsConstructor;
 

@@ -1,4 +1,4 @@
-package com.glitchedwise.controller;
+package com.rootticc.controller;
 
 import java.util.List;
 
@@ -6,9 +6,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.glitchedwise.model.entities.Event;
-import com.glitchedwise.model.forms.EventForm;
-import com.glitchedwise.model.services.CalendarEventService;
+import com.rootticc.model.services.CalendarEventService;
+import com.rootticc.model.entities.Event;
+import com.rootticc.model.forms.EventForm;
 
 import lombok.AllArgsConstructor;
 

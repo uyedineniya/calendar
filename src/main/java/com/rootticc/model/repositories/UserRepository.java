@@ -1,9 +1,9 @@
-package com.glitchedwise.model.repositories;
+package com.rootticc.model.repositories;
 
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
-import com.glitchedwise.model.entities.User;
+import com.rootticc.model.entities.User;
 
 @Repository
 public interface UserRepository extends CrudRepository <User, Integer>{

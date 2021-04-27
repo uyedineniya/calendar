@@ -1,11 +1,11 @@
-package com.glitchedwise.model.forms;
+package com.rootticc.model.forms;
 
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
-import com.glitchedwise.model.entities.Event;
-import com.glitchedwise.model.entities.User;
+import com.rootticc.model.entities.Event;
+import com.rootticc.model.entities.User;
 
 public class EventForm {
 

@@ -1,4 +1,4 @@
-package com.glitchedwise.model.services;
+package com.rootticc.model.services;
 
 import java.util.List;
 import java.util.stream.Collectors;
@@ -6,9 +6,8 @@ import java.util.stream.StreamSupport;
 
 import org.springframework.stereotype.Service;
 
-import com.glitchedwise.model.entities.User;
-import com.glitchedwise.model.forms.UserForm;
-import com.glitchedwise.model.repositories.UserRepository;
+import com.rootticc.model.entities.User;
+import com.rootticc.model.repositories.UserRepository;
 
 import lombok.AllArgsConstructor;
 

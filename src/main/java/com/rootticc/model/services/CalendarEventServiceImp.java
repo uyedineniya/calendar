@@ -1,4 +1,4 @@
-package com.glitchedwise.model.services;
+package com.rootticc.model.services;
 
 import java.util.List;
 import java.util.Map;
@@ -7,9 +7,9 @@ import java.util.stream.StreamSupport;
 
 import org.springframework.stereotype.Service;
 
-import com.glitchedwise.model.entities.Event;
-import com.glitchedwise.model.repositories.CalendarEventExtraRepository;
-import com.glitchedwise.model.repositories.CalendarEventRepository;
+import com.rootticc.model.entities.Event;
+import com.rootticc.model.repositories.CalendarEventExtraRepository;
+import com.rootticc.model.repositories.CalendarEventRepository;
 
 import lombok.AllArgsConstructor;
 

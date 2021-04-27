@@ -1,8 +1,8 @@
-package com.glitchedwise.model.services;
+package com.rootticc.model.services;
 
 import java.util.List;
 
-import com.glitchedwise.model.entities.User;
+import com.rootticc.model.entities.User;
 
 public interface UserService {
 

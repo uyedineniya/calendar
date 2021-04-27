@@ -1,4 +1,4 @@
-package com.glitchedwise.model.entities;
+package com.rootticc.model.entities;
 
 import java.util.Date;
 
