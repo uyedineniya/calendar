@@ -32,16 +32,18 @@ public class UserController {
 	}
 
 	@RequestMapping("/list")
-	public List<User> listUsers() {
+	public List<User> listUsers(UserForm userForm) {
 
 		try {
-			return userService.findAll();
+			return userService.listUsers(userForm.buildFilter());
 
 		} catch (Throwable t) {
 			throw t;
 		}
 
 	}
+	
+	
 
 	@RequestMapping("/remove")
 	public void loignUser(Integer userId) {

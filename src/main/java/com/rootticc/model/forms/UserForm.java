@@ -1,6 +1,8 @@
 package com.rootticc.model.forms;
 
 import java.sql.Date;
+import java.util.HashMap;
+import java.util.Map;
 
 import com.rootticc.model.entities.User;
 
@@ -10,16 +12,48 @@ public class UserForm {
 
 	private String firstName;
 
-	private String LastName;
+	private String lastName;
 
 	private String username;
 	
 	private String email;
 	
 	private String password;
-
-
+	
 	private Date createdIn;
+	
+	
+	public Map<String, Object> buildFilter(){
+		
+		Map<String, Object> filter = new HashMap<>();
+		
+		if(id != null) {
+			filter.put("id", id);
+		}
+		
+		if(firstName != null && !firstName.trim().isEmpty()) {
+			filter.put("firstName", firstName);
+		}
+		
+		if(lastName != null && !lastName.trim().isEmpty()) {
+			filter.put("lastName", lastName);
+		}
+		
+		if(username != null && !username.trim().isEmpty()) {
+			filter.put("username", username);
+		}
+		
+		if(email != null && !email.trim().isEmpty()) {
+			filter.put("email", email);
+		}
+		
+		if(createdIn != null) {
+			filter.put("createdIn", createdIn);
+		}
+		
+		return filter;
+		
+	}
 
 	public Integer getId() {
 		return id;
@@ -38,11 +72,11 @@ public class UserForm {
 	}
 
 	public String getLastName() {
-		return LastName;
+		return lastName;
 	}
 
 	public void setLastName(String lastName) {
-		LastName = lastName;
+		lastName = lastName;
 	}
 
 	public String getUsername() {
@@ -83,7 +117,7 @@ public class UserForm {
 		user.setCreatedIn(createdIn);
 		user.setFirstName(firstName);
 		user.setId(id);
-		user.setLastName(LastName);
+		user.setLastName(lastName);
 		user.setUser(username);
 		user.setEmail(email);
 		user.setPassword(password);

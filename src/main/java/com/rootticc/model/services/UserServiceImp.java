@@ -1,8 +1,7 @@
 package com.rootticc.model.services;
 
 import java.util.List;
-import java.util.stream.Collectors;
-import java.util.stream.StreamSupport;
+import java.util.Map;
 
 import org.springframework.stereotype.Service;
 
@@ -31,18 +30,6 @@ public class UserServiceImp implements UserService{
 	}
 
 	@Override
-	public List<User> findAll() {
-		
-		try {
-					
-			return StreamSupport.stream(userRepository.findAll().spliterator(), false).collect(Collectors.toList());
-			
-		}catch(Throwable t) {
-			throw t;
-		}
-	}
-
-	@Override
 	public void deleteUser(Integer userId) {
 		
 		try {
@@ -52,6 +39,18 @@ public class UserServiceImp implements UserService{
 		}catch(Throwable t) {
 			throw t;
 		}
+	}
+
+	@Override
+	public List<User> listUsers(Map<String, Object> filter) {
+		try {
+			
+			return null;
+			
+		}catch(Throwable t) {
+			throw t;
+		}
+		
 	}
 
 }

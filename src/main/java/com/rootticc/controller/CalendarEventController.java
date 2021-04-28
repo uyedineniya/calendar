@@ -19,25 +19,13 @@ public class CalendarEventController {
 
 	private CalendarEventService calendarEventService;
 
-	//responsavel por fazer o doFilter() na hora que o usuario logar, trazendo todos os eventos do usuário X
+	//responsavel por realizar a busca geral
 	@RequestMapping(value = "/list", method = RequestMethod.GET) 
 	public List<Event> lisEvents(EventForm eventForm) {
 		
 		try {
 			
 			return calendarEventService.findCalendarEventByFilter(eventForm.buildFilters());
-
-		} catch (Throwable t) {
-			throw t;
-		}
-	}
-	
-	//responsavel por retornar todo os eventos registrados no banco de dados
-	@RequestMapping(value = "/list-all", method = RequestMethod.GET)
-	public List<Event> listAllEvents(EventForm eventForm) {
-
-		try {
-			return calendarEventService.findAll();
 
 		} catch (Throwable t) {
 			throw t;
